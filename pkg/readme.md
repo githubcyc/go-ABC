@@ -17,3 +17,13 @@ set GOPATH=$home/pkg
 go build <pkg name>
 go install <pkg name>
 ```
+
+
+* add $GOPATH/bin to $PATH
+> [How to Write Go Code - The Go Programming Language](https://golang.org/doc/code.html#GOPATH)
+```
+vim ~/.bash_profile
+// add a line
+export PATH=$PATH:$(go env GOPATH)/bin
+source  ~/.bash_profile
+```
