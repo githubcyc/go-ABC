@@ -11,10 +11,26 @@
 `docker-machine ls`
 * If you don't have one, you can create one with: 
 `docker-machine create default`
+
+```
+docker-machine create --driver virtualbox --engine-registry-mirror https://1rqn7spi.mirror.aliyuncs.com test
+```
 * Start the machine, if stopped: 
 `docker-machine start default`
 * Connect with machine via SSH: 
 `docker-machine ssh default`
+
+```
+ssh docker@192.168.99.100
+docker/tcuser
+sudo -i
+```
+
+* install docker-compose in `default`
+[Install Docker Compose | Docker Documentation](https://docs.docker.com/v17.09/compose/install/#install-compose)
+
+:warning: VirtualBox Host-Only Ethernet Adapter 
+
 
 ```
 sudo sed -i "s|EXTRA_ARGS='|EXTRA_ARGS='--registry-mirror=http://9zkjjecg.mirror.aliyuncs.com/ |g" /var/lib/boot2docker/profile 
