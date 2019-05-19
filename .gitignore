@@ -1,8 +1,5 @@
-
-config/
+*.pem
 log/
-static/
-upload/
 _syso/
 
 windows_amd64/

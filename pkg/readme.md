@@ -3,7 +3,7 @@
 ```
 go env
 
-//set GOPATH=D:\Go\gopath
+//set GOPATH=D:\GoSpace
 ```
 
 > 自定义包放在$GOROOT/$GOPATH下的src目录下
