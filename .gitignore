@@ -4,3 +4,4 @@ _syso/
 
 windows_amd64/
 *.a
+.vscode

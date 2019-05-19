@@ -1,4 +1,4 @@
-package main
+package Test
 
 import (
 	"fmt"
@@ -31,7 +31,8 @@ type TVConnector struct {
 func (tv TVConnector) Connect() {
 	fmt.Println("Connected", tv.name)
 }
-func test() {
+
+func TestPhone() {
 	pc := PhoneConnector{"PhoneConnector"}
 	// a = PhoneConnector{"PhoneConnector"}
 	var a Connector

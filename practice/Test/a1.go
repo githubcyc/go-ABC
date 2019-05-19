@@ -1,4 +1,4 @@
-package main
+package Test
 
 import "fmt"
 
@@ -9,7 +9,7 @@ func (tz *TZ) Increase(num int) {
 	*tz += TZ(num)
 }
 
-func main() {
+func TestTZ() {
 	var a TZ
 	a.Increase(100)
 	fmt.Println(a)
